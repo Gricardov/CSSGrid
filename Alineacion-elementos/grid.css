@@ -1,0 +1,21 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,200px);
+
+    /*Alineación horizontal, abarca solo lo que necesita*/
+    justify-items: center; /*auto, stretch, center, end, start*/
+
+    /*Alineación vertical*/
+    align-items: center; /*auto, stretch, center, end, start*/
+
+
+}
+
+.contenedor .item{
+    background: #ff8000;
+    /*width: 100%, no se usa, si no otra propiedad independiente*/
+    justify-self: stretch;
+    align-self: start;
+}
